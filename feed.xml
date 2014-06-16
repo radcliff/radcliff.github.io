@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sterling.</title>
+    <description>Apparently, it is a thing to have a blog. Perhaps we should make it a thing to have something worth saying instead?</description>
+    <link>http://radcliff.github.io/</link>
+    <atom:link href="http://radcliff.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>I Learned How To Use Jeckyll</title>
+        <description>&lt;h1 id=&quot;jekyll-is-alright&quot;&gt;Jekyll is alright.&lt;/h1&gt;
+
+&lt;p&gt;Actually, that’s not true. I think Jekyll is pretty cool. It took me a while to get into the workflow, but now I appreciate it a lot. The first time I ran &lt;code&gt;jeckyll new&lt;/code&gt; and started poking around inside of what I got back, I felt like I had just inherited an application from someone else. Because Jeckyll automatically generates a lot of markup it sort of takes a while to do enough tweaks to feel a sense of ownership with the project. There is a bit to learn. Well, not &lt;em&gt;that&lt;/em&gt; much really, but you have to learn a few things, and they have to be right. I assume this is what is meant by “opinionated framework”. The &lt;code&gt;--watch&lt;/code&gt; flag confused me initially; it doesn’t watch changes to &lt;code&gt;_config.yml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;there-is-some-stuff-going-on&quot;&gt;There is some stuff going on.&lt;/h1&gt;
+
+&lt;p&gt;I thought it was cool that it works out of the box with GitHub pages. Also, it’s sick that I can just write up a post in Markdown and Jeckyll will render the correct markup from that. There is some templating available, but I haven’t really messed with it. I had to figure what YAML was as well. Turns out it is a “recursive acronym”. Prety cool, I suppose.&lt;/p&gt;
+
+&lt;h1 id=&quot;cool-style&quot;&gt;Cool style.&lt;/h1&gt;
+
+&lt;p&gt;I am learning a lot of CSS trying to set this blog up. Because Jekyll comes with a really well organized &lt;code&gt;main.css&lt;/code&gt; and a lot of predefined classes, I feel like I am getting a lot of help. It’s nice to be able to use some predetermined styles for a few things, but it is even nice to have the use of a clean, correct organization in the style sheet. I included jQuery in the &lt;code&gt;default.html&lt;/code&gt; in order to dynamically generate some padding for some of the elements that would adjust correctly for different viewports.&lt;/p&gt;
+
+&lt;h1 id=&quot;some-dude-exists&quot;&gt;Some dude exists.&lt;/h1&gt;
+
+&lt;p&gt;I guess the guy who wrote Jeckyll is the former president of GitHub that left recently. I went on a tour of the GitHub offices with my class and I saw the computer he invented the pull request on in a glass case. Apparently he is really good at writing code, but probably not too aware of how he treats the people around him. Bummer. Like, treat the people around you with respect, duh. Even if you are a founder.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Jun 2014 11:00:00 -0700</pubDate>
+        <link>http://radcliff.github.io/2014/06/15/i-learned-how-to-use-jeckyll/</link>
+        <guid isPermaLink="true">http://radcliff.github.io/2014/06/15/i-learned-how-to-use-jeckyll/</guid>
+      </item>
+    
+      <item>
+        <title>I want To Make Node Into Rails</title>
+        <description>
+</description>
+        <pubDate>Sat, 14 Jun 2014 11:00:00 -0700</pubDate>
+        <link>http://radcliff.github.io/2014/06/14/i-want-to-make-node-into-rails/</link>
+        <guid isPermaLink="true">http://radcliff.github.io/2014/06/14/i-want-to-make-node-into-rails/</guid>
+      </item>
+    
+  </channel>
+</rss>
