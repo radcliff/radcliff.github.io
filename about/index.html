@@ -129,12 +129,12 @@
         var header_height = $(' .site-header ').height();
         var footer_height = $(' .site-footer').height();
         
-        
         $(' .page-content ').css('padding-top', (header_height + 10) + 'px');
-        $(' .page-content ').css('padding-bottom', ((footer_height * 4) + 50) + 'px');
+        $(' .page-content ').css('padding-bottom', ((footer_height * 4) + header_height) + 'px');
 
         if ( $( window ).width() <= 320 ) {
-          $(' .site-footer').css('display', 'none');
+          $(' .site-footer span.text ').css('line-height', '0em');
+          $(' .site-footer span.text ').css('padding', '0');
         }
       }); 
     </script>

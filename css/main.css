@@ -87,8 +87,10 @@ a:hover   { color: black; text-decoration: none; }
   position: fixed;
   bottom: 0;
   width: 100%;
+  background-image: url('http://www.newpicasso.org/wp-content/uploads/2014/01/contemporary-abstract-watercolor-ink-painting-brad-rickerby-165089.jpg');
+  background-size: cover;
 }
-.site-footer::after {
+/*.site-footer::after {
   content: "";
   top: 0;
   left: 0;
@@ -104,7 +106,7 @@ a:hover   { color: black; text-decoration: none; }
   transform: scaleY(-1);
   filter: FlipV;
   -ms-filter: "FlipV";
-}
+}*/
 .footer-heading {
   font-size: 18px;
   font-weight: 300;
@@ -469,7 +471,16 @@ span.username:hover {
   .site-title {
     font-size: 4em;
   }
+
+  .home .posts a.post-link {
+    font-size: 1.25em;
+  }
+
   .site-footer {
-    display: hidden;
+    padding: 7px 0 0 0;
+  }
+  .site-footer .footer-col-3,
+  .site-footer .footer-col-2 {
+    display: none;
   }
 }
