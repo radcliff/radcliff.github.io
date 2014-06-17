@@ -114,7 +114,7 @@ a:hover   { color: black; text-decoration: none; }
   margin-bottom: 15px;
 }
 
-.site-footer .column { float: left; margin-bottom: 15px; }
+.site-footer .column { float: left }
 
 .footer-col-1 {
   width: 270px; /*fallback*/
@@ -130,7 +130,7 @@ a:hover   { color: black; text-decoration: none; }
   width: -moz-calc(23.125% - 10px);
   width: -o-calc(23.125% - 10px);
   width: calc(23.125% - 10px);
-  margin-right: 10px
+  margin-right: 10px;
 }
 .footer-col-3 {
   width: 335px; /*fallback*/
@@ -207,6 +207,31 @@ span.username:hover {
 /* ----------------------------------------------------------*/
 
 .home h1 { margin-bottom: 25px; }
+
+#photo {
+  height: 380px;
+  border: 5px solid black;
+  padding: 1px;
+}
+
+.home .column { float: left; margin-bottom: 15px; }
+
+.main-col-1 {
+  width: 380px; /*fallback*/
+  width: -webkit-calc(50% - 10px);
+  width: -moz-calc(50% - 10px);
+  width: -o-calc(50% - 10px);
+  width: calc(50% - 10px);
+  margin-right: 10px
+}
+.main-col-2 {
+  width: 380px; /*fallback*/
+  width: -webkit-calc(50% - 10px);
+  width: -moz-calc(50% - 10px);
+  width: -o-calc(50% - 10px);
+  width: calc(50% - 10px);
+  margin-right: 10px;
+}
 
 .posts { list-style-type: none; }
 
@@ -387,12 +412,18 @@ span.username:hover {
 /* media queries */
 /* ----------------------------------------------------------*/
 
+@media screen and (max-width: 850px) {
+  #photo {
+    width: 300px;
+    height: 300px;
+  }
+}
 
 @media screen and (max-width: 750px) {
 
-  .footer-col-1 { width: 50%; }
+  .footer-col-1, .main-col-1 { width: 50%; }
 
-  .footer-col-2 {
+  .footer-col-2, .main-col-2 {
     width: 45%; /*fallback*/
     width: -webkit-calc(50% - 10px);
     width: -moz-calc(50% - 10px);
@@ -460,7 +491,7 @@ span.username:hover {
   .post-content ul,
   .post-content ol { padding-left: 10px; }
 
-  .site-footer .column {
+  .site-footer .column, .home .column {
     float: none;
     clear: both;
     width: auto;
@@ -482,5 +513,14 @@ span.username:hover {
   .site-footer .footer-col-3,
   .site-footer .footer-col-2 {
     display: none;
+  }
+
+  .home {
+    width: 100%;
+  }
+
+  #photo {
+    margin-right: 10px;
+    margin-bottom: 20px;
   }
 }
