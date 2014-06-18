@@ -7,7 +7,7 @@
     <title>Think Sterling.</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Apparently, it is a thing to have a blog. Perhaps we should make it a thing to have something worth saying instead?">
-    <link rel="canonical" href="http://radcliff.github.io/">
+    <link rel="canonical" href="http://radcliff.github.io/2014/06/15/development-with-ngrok/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -36,7 +36,7 @@
       </a> -->
       <!-- <div class="trigger">
         {#% for page in site.pages %}
-          <a class="page-link" href="/"></a>
+          <a class="page-link" href="/2014/06/15/development-with-ngrok/">Development With ngrok</a>
         {#% endfor %}
       </div> -->
     </nav>
@@ -48,27 +48,33 @@
 
       <div class="page-content">
         <div class="wrap">
-        <div class="home">
-	<div class="main-col-1 column">
-		<img id="photo" src="https://s3.amazonaws.com/radcliff/e2b356.jpg">
-	</div>
-	<div class="main-col-2 column">
-	  <ul class="posts">
-	    
-	      <li>
-	        <span class="post-date">Jun 15, 2014</span>
-	        <a class="post-link" href="/2014/06/15/i-learned-how-to-use-jeckyll/">I Learned How To Use Jeckyll</a>
-	      </li>
-	    
-	      <li>
-	        <span class="post-date">Jun 15, 2014</span>
-	        <a class="post-link" href="/2014/06/15/development-with-ngrok/">Development With ngrok</a>
-	      </li>
-	    
-	  </ul>
-	</div>
-</div>
+        <div class="post">
 
+  <header class="post-header">
+    <h1>Development With ngrok</h1>
+    <p class="meta">Jun 15, 2014</p>
+  </header>
+
+  <article class="post-content">
+  	<h1 id="i-have-never-really-liked-heroku-deployment-for-some-reason-everything-always-breaks">I have never really liked Heroku deployment. For some reason, everything always breaks.</h1>
+
+<p>I am currently developing a small Sinatra application that uses the Twilio API. In order to get Twilio working with an application, it needs to be exposed to web so that HTTP requests/responses can actually make it to/from the application. At first I think I thought Heroku was the only easy way of achieving this, and so I have avoided using Twilio. But after 5 minutes of searching a found a much more interesting solution to this problem called ngrok.</p>
+
+<h1 id="ngrok-exposes-your-local-web-server-to-the-internet">ngrok exposes your local web server to the internet</h1>
+
+<blockquote>
+  <p>ngrok lets you expose a locally running web service to the internet. Just tell ngrok which port your web server is running on.</p>
+</blockquote>
+
+<p>All you have to do is <code>brew install ngrok</code> and then a <code>ngrok &lt;port&gt;</code> where <code>&lt;port&gt;</code> is the port that your server is listening for requests on. ngrok creates a “secure” tunnel between your local server and the rest of the world. It’s really easy to set up!</p>
+
+<h1 id="subdomains-on-the-fly">subdomains on the fly</h1>
+
+<p>But wait, there’s more! Using the <code>-subdomain=something</code> flag will give you a subdomain on ngrok.com like <code>//something.ngrok.com</code> !! All you have to do is create a free user account at ngrok.com and set an auth token on your local machine. Now <code>//something.ngrok.com</code> points to the server running on your local machine and can be accessed by any client through the internet. Obviously, this is is extremely limited, but great for the purpose of developing small applications.</p>
+
+  </article>
+
+</div>
         </div>
       </div>
 

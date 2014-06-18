@@ -31,5 +31,28 @@
         <guid isPermaLink="true">http://radcliff.github.io/2014/06/15/i-learned-how-to-use-jeckyll/</guid>
       </item>
     
+      <item>
+        <title>Development With ngrok</title>
+        <description>&lt;h1 id=&quot;i-have-never-really-liked-heroku-deployment-for-some-reason-everything-always-breaks&quot;&gt;I have never really liked Heroku deployment. For some reason, everything always breaks.&lt;/h1&gt;
+
+&lt;p&gt;I am currently developing a small Sinatra application that uses the Twilio API. In order to get Twilio working with an application, it needs to be exposed to web so that HTTP requests/responses can actually make it to/from the application. At first I think I thought Heroku was the only easy way of achieving this, and so I have avoided using Twilio. But after 5 minutes of searching a found a much more interesting solution to this problem called ngrok.&lt;/p&gt;
+
+&lt;h1 id=&quot;ngrok-exposes-your-local-web-server-to-the-internet&quot;&gt;ngrok exposes your local web server to the internet&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ngrok lets you expose a locally running web service to the internet. Just tell ngrok which port your web server is running on.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;All you have to do is &lt;code&gt;brew install ngrok&lt;/code&gt; and then a &lt;code&gt;ngrok &amp;lt;port&amp;gt;&lt;/code&gt; where &lt;code&gt;&amp;lt;port&amp;gt;&lt;/code&gt; is the port that your server is listening for requests on. ngrok creates a “secure” tunnel between your local server and the rest of the world. It’s really easy to set up!&lt;/p&gt;
+
+&lt;h1 id=&quot;subdomains-on-the-fly&quot;&gt;subdomains on the fly&lt;/h1&gt;
+
+&lt;p&gt;But wait, there’s more! Using the &lt;code&gt;-subdomain=something&lt;/code&gt; flag will give you a subdomain on ngrok.com like &lt;code&gt;//something.ngrok.com&lt;/code&gt; !! All you have to do is create a free user account at ngrok.com and set an auth token on your local machine. Now &lt;code&gt;//something.ngrok.com&lt;/code&gt; points to the server running on your local machine and can be accessed by any client through the internet. Obviously, this is is extremely limited, but great for the purpose of developing small applications.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Jun 2014 11:00:00 -0700</pubDate>
+        <link>http://radcliff.github.io/2014/06/15/development-with-ngrok/</link>
+        <guid isPermaLink="true">http://radcliff.github.io/2014/06/15/development-with-ngrok/</guid>
+      </item>
+    
   </channel>
 </rss>
